@@ -3,14 +3,14 @@ body {
   font-size: 18px;
   line-height: 34px;
   color: #777;
-  background: url("../images/concrete_seamless.png");
+  background: url("../images/Background-Image.png");
 }
 
 * {
   box-sizing: border-box;
 }
 
-/* general */
+/* --------------------- general --------------------- */
 
 .container {
   width: 100%;
@@ -24,6 +24,10 @@ h2,
 h3,
 p {
   margin-bottom: 20px;
+  
+}
+p{
+  text-indent: 30px;
 }
 
 p:last-child {
@@ -50,7 +54,7 @@ h3 {
   font-size: 22px;
 }
 
-/* header */
+/* --------------------- header --------------------- */
 
 #masthead {
   position: fixed;
@@ -96,7 +100,7 @@ nav a:first-child {
   border-left: 0 none;
 }
 
-/* footer */
+/* --------------------- footer --------------------- */
 
 footer {
   padding: 30px 0;
@@ -140,7 +144,7 @@ h3,
   margin-right: 0;
 }
 
-/* main */
+/* --------------------- main --------------------- */
 
 #main-container {
   padding-top: 130px;
@@ -156,7 +160,7 @@ h3,
   border: 1px solid #ddd;
 }
 
-/* portfolio page */
+/* --------------------- portfolio page --------------------- */
 
 .work {
   position: relative;
@@ -198,7 +202,7 @@ h3,
   margin-right: 25px;
 }
 
-/* contact page */
+/* --------------------- contact page --------------------- */
 
 #contact-form ul {
   margin-bottom: 20px;
@@ -236,4 +240,136 @@ input[type=submit] {
   cursor: pointer;
   background: #4aaaa5;
   border: 0 none;
+}
+/* --------------------- media --------------------- */
+
+@media only screen and (max-width:980px){
+
+
+.container{
+  width: 100%;
+  max-width: 600px;
+}
+.main-section{
+  max-width: 300px;
+  width: 100%;
+ 
+}
+.auth-image{
+  float: none;
+}
+.work{
+  
+  overflow: hidden;
+  max-width: 100%;
+  height: auto;
+ 
+}
+
+}
+
+
+
+
+
+
+
+
+
+@media only screen and (max-width:768px){
+
+.container{
+ width: 100%;
+
+}
+
+.main-section{
+width: 100%;
+  max-width: 650px;
+
+}
+
+
+.sidebar{
+max-width: 650px;
+
+
+}
+.auth-image{
+float: left;
+}
+
+.work{
+ margin: 20px 0 25px;
+  overflow: auto;
+ 
+  width: 45%;
+ 
+ 
+}
+}
+/* --------------------- media 3 --------------------- */
+@media only screen and (max-width:640px){
+
+
+
+.container{
+max-width: 550px;
+width: 100%;
+}
+
+.main-section{
+margin-top: 70px;
+
+}
+
+.auth-image{
+ width: 100%;
+ float: none;
+}
+
+.work{
+width: 100%;
+}
+
+#masthead {
+max-width: 640px;
+width: 100%;
+ float: none;
+ margin: 0;
+ 
+}
+
+nav{
+float: none;
+margin-left: 30px;
+
+}
+
+nav a{
+
+font-weight: bold;
+width: 29%;
+font-size: 20px;
+border-left: 2px solid #efefef;
+
+
+margin-bottom: 20px;
+padding-right: 10px;
+text-align: center;
+
+}
+#logo{
+width: 100%;
+float: none;
+max-width: 640px;
+height: auto;
+display: block;
+font-size: 40px;
+margin: 0px;
+height: auto;
+
+
+
+}
 }
